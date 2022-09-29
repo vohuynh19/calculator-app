@@ -1,6 +1,8 @@
-import { ThemeMode } from "types";
-import { useTheme } from "utils/context";
 import { Button } from "views/components";
+
+import { useTheme } from "utils/context";
+
+import { ThemeMode } from "types";
 
 const CalculatorApp = () => {
   const { theme, setTheme } = useTheme();

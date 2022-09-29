@@ -1,10 +1,12 @@
 import { useEffect } from "react";
-import { ThemeMode } from "types";
+
 import { StorageService } from "utils";
 import { STORAGE_KEY } from "utils/constants";
 import { useTheme } from "utils/context";
 
 import { CalculatorApp } from "views/containers";
+
+import { ThemeMode } from "types";
 
 function App() {
   const { theme, setTheme } = useTheme();
