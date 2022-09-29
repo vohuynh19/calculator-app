@@ -1,1 +1,8 @@
-export type StorageKey = "SECURE_KEY" | "SECOND_ITEM";
+export enum StorageKey {
+  SECURE_KEY = "SECURE_KEY",
+}
+
+export enum ThemeMode {
+  DARK = "DARK",
+  LIGHT = "LIGHT",
+}
