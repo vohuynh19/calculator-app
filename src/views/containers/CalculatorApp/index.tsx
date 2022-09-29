@@ -1,14 +1,15 @@
+import { useRef } from "react";
+
 import { useTheme } from "utils/context";
 
 import { Button } from "views/components";
 import DisplayView from "./components/DisplayView";
 import KeyboardView from "./components/KeyboardView";
+import { DisplayHandle } from "./components/DisplayView/types";
 
 import { ThemeMode } from "types";
 
 import "./style.css";
-import { useRef } from "react";
-import { DisplayHandle } from "./components/DisplayView/types";
 
 const CalculatorApp = () => {
   const { theme, setTheme } = useTheme();

@@ -1,9 +1,12 @@
 import { FC } from "react";
-import { CalculatorService } from "utils/services/CalculatorService";
+
+import { CalculatorService } from "utils";
+
 import { Button } from "views/components";
 
-import "./style.css";
 import { KeyboardViewProps, KeyList } from "./types";
+
+import "./style.css";
 
 const KeyboardView: FC<KeyboardViewProps> = ({ displayRef }) => {
   return (

@@ -1,4 +1,4 @@
-export class CalculatorService {
+export default class CalculatorService {
   static handleClickOperatorButton = (
     currentString: string,
     operator: string

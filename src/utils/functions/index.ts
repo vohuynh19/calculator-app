@@ -1,10 +1,6 @@
 import { ThemeMode } from "types";
 import { DARK_COLORS, ENV, LIGHT_COLORS } from "utils/constants";
 
-/**
- * @desc Get the current window size
- * @returns Object contains window height and width
- */
 export const getWindowDimensions = () => {
   if (typeof window === "undefined") {
     return { width: undefined, height: undefined };
@@ -16,9 +12,6 @@ export const getWindowDimensions = () => {
   };
 };
 
-/**
- * @desc Change application theme
- */
 export const changeTheme = (theme: ThemeMode) => {
   const _colorMapping: any = (theme: ThemeMode) => {
     if (theme === ThemeMode.DARK) return DARK_COLORS;
@@ -30,16 +23,10 @@ export const changeTheme = (theme: ThemeMode) => {
   });
 };
 
-/**
- * @desc Convert from string to object
- */
 export const convertFromStringToObj = (stringObj: string | null) => {
   return JSON.parse(stringObj || "");
 };
 
-/**
- * @desc Convert from string to array
- */
 export const convertFromStringToArr = (stringObj: string) => {
   return stringObj.split(",");
 };

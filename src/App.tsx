@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
-import { StorageService } from "utils";
-import { STORAGE_KEY } from "utils/constants";
-import { useTheme } from "utils/context";
+import { STORAGE_KEY, useTheme, StorageService } from "utils";
 
 import { CalculatorApp } from "views/containers";
 

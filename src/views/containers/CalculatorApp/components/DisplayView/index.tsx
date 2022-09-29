@@ -6,10 +6,12 @@ import {
   useRef,
   useState,
 } from "react";
-import { CalculatorService } from "utils/services/CalculatorService";
+
+import { CalculatorService } from "utils";
+
+import { DisplayHandle, DisplayProps, HistoryType } from "./types";
 
 import "./style.css";
-import { DisplayHandle, DisplayProps, HistoryType } from "./types";
 
 const DisplayView: ForwardRefRenderFunction<DisplayHandle, DisplayProps> = (
   {},
