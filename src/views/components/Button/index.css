@@ -9,6 +9,10 @@
   font-size: 28px;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
 .btn.primary {
   background-color: var(--primary);
 }
@@ -19,4 +23,8 @@
 .btn.extend {
   width: 136px;
   border-radius: 32px;
+}
+
+.btn.highlight {
+  opacity: 0.8;
 }
