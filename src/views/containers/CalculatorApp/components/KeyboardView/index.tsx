@@ -2,11 +2,31 @@ import { Button } from "views/components";
 
 import "./style.css";
 
+const KeyboardView = () => {
+  return (
+    <div className="keyboard-wrapper">
+      {keys.map((rowItems, index) => (
+        <div key={index}>
+          {rowItems.map((item) => (
+            <Button
+              key={item.title}
+              className={`grid-button ${item.extraClass}`}
+              isBlock={item.isBlock}
+            >
+              {item.title}
+            </Button>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const keys = [
   [
     { title: "AC", extraClass: "secondary" },
-    { title: "+/-", extraClass: "secondary" },
-    { title: "%", extraClass: "secondary" },
+    { title: "+/-", extraClass: "secondary", isBlock: true },
+    { title: "%", extraClass: "secondary", isBlock: true },
     { title: "÷", extraClass: "primary" },
   ],
   [
@@ -33,24 +53,5 @@ const keys = [
     { title: "=", extraClass: "primary" },
   ],
 ];
-
-const KeyboardView = () => {
-  return (
-    <div className="keyboard-wrapper">
-      {keys.map((rowItems, index) => (
-        <div key={index}>
-          {rowItems.map((item) => (
-            <Button
-              className={`grid-button ${item.extraClass}`}
-              key={item.title}
-            >
-              {item.title}
-            </Button>
-          ))}
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default KeyboardView;

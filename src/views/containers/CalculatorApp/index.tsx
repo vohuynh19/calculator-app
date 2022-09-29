@@ -18,7 +18,7 @@ const CalculatorApp = () => {
         }
         className={"btn-float"}
       >
-        Change Theme
+        O
       </Button>
 
       <div className="calculator">

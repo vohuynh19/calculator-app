@@ -1,8 +1,10 @@
-import { ButtonProps } from "./types";
-import "./index.css";
 import { useRef } from "react";
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+import { ButtonProps } from "./types";
+
+import "./index.css";
+
+const Button: React.FC<ButtonProps> = ({ children, isBlock, ...props }) => {
   const ref = useRef<any>(null);
 
   const _handleShowShadowEffect = (
@@ -15,14 +17,14 @@ const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
 
     setTimeout(() => {
       ref.current.classList.remove("highlight");
-    }, 300);
+    }, 100);
   };
 
   return (
     <button
       {...props}
       ref={ref}
-      className={`btn ${props.className}`}
+      className={`btn${isBlock ? " blocked" : ""} ${props.className}`}
       onClick={(event) => {
         _handleShowShadowEffect(event);
         props?.onClick?.(event);

@@ -1,5 +1,5 @@
 export type ButtonProps = {
-  children: any;
+  isBlock?: boolean;
 } & React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement

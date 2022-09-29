@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./style.css";
 
 const DisplayView = () => {
-  const [previousText, setPreviousText] = useState("previous");
+  const [previousText, setPreviousText] = useState("10");
 
-  const [currentText, setCurrentText] = useState("current");
+  const [currentText, setCurrentText] = useState("10x3");
 
   return (
     <div className="display-wrapper">
