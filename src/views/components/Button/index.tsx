@@ -13,10 +13,10 @@ const Button: React.FC<ButtonProps> = ({ children, isBlock, ...props }) => {
     e = e || window.event;
     e.preventDefault();
 
-    ref.current.classList.add("highlight");
+    ref.current.classList.add("opacity");
 
     setTimeout(() => {
-      ref.current.classList.remove("highlight");
+      ref.current.classList.remove("opacity");
     }, 100);
   };
 

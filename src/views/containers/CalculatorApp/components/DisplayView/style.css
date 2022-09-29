@@ -1,22 +1,35 @@
 .display-wrapper {
-  height: 80px;
+  height: 120px;
   border-bottom: 2px solid var(--divider);
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .text--previous {
   width: 100%;
   text-align: end;
   color: var(--secondary-text-color);
+  opacity: 0.5;
 }
 
 .text--current {
-  font-size: 28px;
+  font-size: 32px;
   width: 100%;
   text-align: end;
   color: var(--text-color);
   font-weight: 500;
+  width: 100%;
+  white-space: initial;
+  word-wrap: break-word;
+}
+
+.text--result {
+  width: 100%;
+  text-align: end;
+  color: var(--secondary-text-color);
 }

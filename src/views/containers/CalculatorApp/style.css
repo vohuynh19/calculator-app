@@ -5,17 +5,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .calculator {
   background-color: var(--background-color);
   border-radius: 16px;
+  width: 320px;
+  position: relative;
 }
 
 .btn-float {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: -80px;
+  right: -80px;
   background-color: var(--background-color);
+  animation: MoveUpDown 1.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  100%,
+  0% {
+    top: -80px;
+  }
+  50% {
+    top: -72px;
+  }
 }

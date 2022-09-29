@@ -2,6 +2,11 @@
   padding: 8px;
 }
 
+.keyboard-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .grid-button {
   margin: 4px;
 }
