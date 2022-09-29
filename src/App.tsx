@@ -11,7 +11,9 @@ function App() {
 
   useEffect(() => {
     const cachedTheme = StorageService.getItemByKey(STORAGE_KEY.THEME);
-    cachedTheme !== theme && setTheme(cachedTheme as ThemeMode);
+    if (cachedTheme) {
+      cachedTheme !== theme && setTheme(cachedTheme as ThemeMode);
+    }
   }, []);
 
   return <CalculatorApp />;
