@@ -28,7 +28,6 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   useEffect(() => {
     changeTheme(theme);
 
-    console.log("bug", theme);
     StorageService.storeItemByKey(STORAGE_KEY.THEME, theme);
   }, [theme]);
 
