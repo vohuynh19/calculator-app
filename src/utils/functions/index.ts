@@ -1,17 +1,6 @@
 import { ThemeMode } from "types";
 import { DARK_COLORS, ENV, LIGHT_COLORS } from "utils/configs";
 
-export const getWindowDimensions = () => {
-  if (typeof window === "undefined") {
-    return { width: undefined, height: undefined };
-  }
-  const { outerWidth: width, outerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-};
-
 export const changeTheme = (theme: ThemeMode) => {
   const _colorMapping: any = (theme: ThemeMode) => {
     if (theme === ThemeMode.DARK) return DARK_COLORS;
