@@ -24,12 +24,15 @@ const DisplayView: ForwardRefRenderFunction<DisplayHandle, DisplayProps> = (
   const [isWaitNewNum, setIsWaitNewNum] = useState(false);
 
   useEffect(() => {
-    console.log(CalculatorService.handleCalculate(currentText));
     if (resultRef?.current) {
-      if (!isNaN(CalculatorService.handleCalculate(currentText))) {
-        resultRef.current.innerText = `= ${CalculatorService.handleCalculate(
-          currentText
-        )}`;
+      if (currentText === "") {
+        resultRef.current.innerText = "";
+      } else {
+        if (!isNaN(CalculatorService.handleCalculate(currentText))) {
+          resultRef.current.innerText = `= ${CalculatorService.handleCalculate(
+            currentText
+          )}`;
+        }
       }
     }
   }, [currentText]);

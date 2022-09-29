@@ -18,8 +18,9 @@ export default class CalculatorService {
 
   static handleCalculate = (equationStr: string) => {
     let tempStr = equationStr;
-    tempStr = tempStr.replace("x", "*");
-    tempStr = tempStr.replace("÷", "/");
+    tempStr = tempStr.replaceAll("x", "*");
+    tempStr = tempStr.replaceAll("÷", "/");
+
     let res;
     try {
       res = eval(tempStr);

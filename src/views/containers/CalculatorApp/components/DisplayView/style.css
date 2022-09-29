@@ -1,5 +1,5 @@
 .display-wrapper {
-  height: 120px;
+  height: 144px;
   border-bottom: 2px solid var(--divider);
   padding: 16px;
   display: flex;
@@ -15,6 +15,7 @@
   text-align: end;
   color: var(--secondary-text-color);
   opacity: 0.5;
+  line-height: 22px;
 }
 
 .text--current {
