@@ -12,7 +12,7 @@
 │   ├── views           - Source files related to UI
 │   │   ├── containers  - Pages/Screens UI
 │   │   └── components  - Reuseable components
-│   │
+│   ├── types           - Declare reuseable Types/Enums/Interfaces
 │   ├── utils           - Utilizations
 │   │   ├── configs     - Configurations
 │   │   ├── context     - Reuseable contexts API
