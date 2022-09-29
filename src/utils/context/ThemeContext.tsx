@@ -1,7 +1,7 @@
 import React, { Dispatch, useContext, useState, useEffect } from "react";
 
 import { StorageService } from "utils/services";
-import { STORAGE_KEY } from "utils/constants";
+import { StorageKey } from "types";
 import { changeTheme } from "utils/functions";
 
 import { ThemeMode } from "types";
@@ -28,7 +28,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   useEffect(() => {
     changeTheme(theme);
 
-    StorageService.storeItemByKey(STORAGE_KEY.THEME, theme);
+    StorageService.storeItemByKey(StorageKey.THEME, theme);
   }, [theme]);
 
   return (

@@ -1,5 +1,5 @@
 import { ThemeMode } from "types";
-import { DARK_COLORS, ENV, LIGHT_COLORS } from "utils/constants";
+import { DARK_COLORS, ENV, LIGHT_COLORS } from "utils/configs";
 
 export const getWindowDimensions = () => {
   if (typeof window === "undefined") {
