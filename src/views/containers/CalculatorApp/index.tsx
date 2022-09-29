@@ -1,6 +1,9 @@
-import { Button } from "views/components";
-
+import "./style.css";
 import { useTheme } from "utils/context";
+
+import { Button } from "views/components";
+import DisplayView from "./components/DisplayView";
+import KeyboardView from "./components/KeyboardView";
 
 import { ThemeMode } from "types";
 
@@ -13,11 +16,15 @@ const CalculatorApp = () => {
         onClick={() =>
           setTheme(theme === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK)
         }
+        className={"btn-float"}
       >
         Change Theme
       </Button>
-      <Button>Click Me</Button>
-      <Button>Click Me</Button>
+
+      <div className="calculator">
+        <DisplayView />
+        <KeyboardView />
+      </div>
     </div>
   );
 };

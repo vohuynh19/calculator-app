@@ -1,0 +1,21 @@
+.wrapper {
+  background-color: var(--wrapper-bg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calculator {
+  background-color: var(--background-color);
+  border-radius: 16px;
+}
+
+.btn-float {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background-color: var(--background-color);
+}

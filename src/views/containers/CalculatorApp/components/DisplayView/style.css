@@ -1,0 +1,22 @@
+.display-wrapper {
+  height: 80px;
+  border-bottom: 2px solid var(--divider);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text--previous {
+  width: 100%;
+  text-align: end;
+  color: var(--secondary-text-color);
+}
+
+.text--current {
+  font-size: 28px;
+  width: 100%;
+  text-align: end;
+  color: var(--text-color);
+  font-weight: 500;
+}

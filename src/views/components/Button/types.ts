@@ -1,4 +1,6 @@
 export type ButtonProps = {
   children: any;
-  onClick?: () => void;
-};
+} & React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
