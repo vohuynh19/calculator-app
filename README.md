@@ -1,4 +1,4 @@
-# Calculator Application
+# Cinnamon front-end test round 2: Calculator Application 
 
 ## Demo
 
